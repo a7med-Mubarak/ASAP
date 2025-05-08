@@ -1,3 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg {
+  background-image: url(assets/images/krisjanis-kazaks-uMyONsNI8Ec-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bgg {
+  background-size: cover;
+  background-position: center;
+}
+
+.mm {
+  margin-left: 60%;
+}
+
+.edit {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.btn-read {
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  background-color: #1dad76;
+  border-radius: 5%;
+  font-size: large;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-top: 1rem;
+}
+
+.btn-analysis {
+  width: 100%;
+  max-width: 250px;
+  padding: 1.5%;
+  background-color: #1dad76;
+  border-radius: 5%;
+  font-size: large;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn-read:hover,
+.btn-analysis:hover {
+  background-color: #1e9869;
+}
+
+@media (min-width: 768px) {
+  .btn-analysis {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .btn-read {
+    margin-left: 0;
+  }
+}
+
+@keyframes ballMove {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-60px) translateY(-10px) rotate(360deg);
+    opacity: 0.9;
+  }
+}
+
+.animate-ballMove {
+  animation: ballMove 1.5s ease-in-out infinite alternate;
+}
