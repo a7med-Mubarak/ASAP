@@ -11,7 +11,7 @@ import AboutUs from './modules/AboutUs/Components/AboutUs'
 
 function App() {
 
-  const routes = createHashRouter(
+  const routes = create(
     [
       {
         errorElement: <NotFound />,
