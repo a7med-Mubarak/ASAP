@@ -88,7 +88,7 @@ export default function ContactUs() {
     }
 
     try {
-      const response = await axios.post('https://football-dhzp.onrender.com/api/contact', {
+      const response = await axios.post('https://foot.genoun.com/api/contact', {
         name,
         email,
         message,
