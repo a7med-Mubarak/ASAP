@@ -37,7 +37,7 @@ export default function MatchAnalysis() {
     setLoading(true);
 
     const formData = new FormData();
-    formData.append('video', selectedFile); // ← API expects this field name
+    formData.append('video', selectedFile); 
 
     try {
       const response = await axios.post('https://foot.genoun.com/api/videos/analyze', formData, {
@@ -71,7 +71,6 @@ export default function MatchAnalysis() {
             bodyClassName="text-sm"
             />
 
-      {/* Overlay while loading */}
       {loading && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white w-96 p-6 rounded-md shadow-md text-center">
@@ -81,7 +80,6 @@ export default function MatchAnalysis() {
         </div>
       )}
 
-      {/* Dropzone Section */}
       <div className="dropzone-container flex justify-center items-center py-16 mt-32 flex-col gap-6">
         <div
           {...getRootProps()}
@@ -93,7 +91,6 @@ export default function MatchAnalysis() {
           </p>
         </div>
 
-        {/* Upload Button */}
         <div className="mt-4">
           <label className="bg-green-600 hover:bg-green-700 text-white px-10 py-6 rounded-md cursor-pointer shadow-md">
             Choose File
@@ -114,7 +111,6 @@ export default function MatchAnalysis() {
         </div>
       </div>
 
-      {/* Analyze Now Button */}
       <div className="text-right mt-10 mr-16">
         <button
           className="btn-analysis bg-green-600 hover:bg-green-700 px-6 py-2 rounded-md shadow-md"
@@ -128,7 +124,7 @@ export default function MatchAnalysis() {
       <hr />
       <hr />
 
-      {/* Results */}
+      
       <div>
         <h1 className="text-center font-bold text-3xl text-green-500 my-8">
           {result ? 'Analysis Result' : 'Upload a file to see the analysis result'}

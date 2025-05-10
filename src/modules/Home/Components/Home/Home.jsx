@@ -117,7 +117,7 @@ export default function Home() {
         </div>
       </div>
 
-        <div className="fixed bottom-0 right-0 m-6 p-4 bg-white shadow-lg rounded-lg z-50 max-w-md w-full break-words">
+        <div className="fixed bottom-0 right-0 m-6 p-4 bg-white shadow-lg rounded-lg z-50 w-80 break-words">
           <div className="chatbot-container">
             <h2 className="text-lg font-bold">Football Chatbot</h2>
             <div className="space-y-4">
