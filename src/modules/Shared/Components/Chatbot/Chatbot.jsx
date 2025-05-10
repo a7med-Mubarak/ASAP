@@ -7,23 +7,25 @@
 
 // export default function Chatbot() {
 
-//       let navigate = useNavigate();
-//       const [message, setMessage] = useState('');
-//       const [response, setResponse] = useState('');
-//       const [loading, setLoading] = useState(false);
+//     let navigate = useNavigate();
+//     const [message, setMessage] = useState('');
+//     const [response, setResponse] = useState('');
+//     const [loading, setLoading] = useState(false);
+  
     
-//       const handleSendMessage = async () => {
-//         setLoading(true);
-//         try {
-//           const res = await axios.post('https://football-dhzp.onrender.com/api/chatbot/message', { message });
-//           setResponse(res.data.data.message);
-//         } catch (error) {
-//           console.error("Error sending message:", error);
-//           setResponse("Error processing message");
-//         } finally {
-//           setLoading(false);
-//         }
-//       };
+  
+//     const handleSendMessage = async () => {
+//       setLoading(true);
+//       try {
+//         const res = await axios.post('https://foot.genoun.com/api/chatbot/message', { message });
+//         setResponse(res.data.data.message);
+//       } catch (error) {
+//         console.error("Error sending message:", error);
+//         setResponse("Error processing message");
+//       } finally {
+//         setLoading(false);
+//       }
+//     };
 
 
 //   return <>

@@ -1,5 +1,3 @@
-
-import { useState } from 'react'
 import './App.css'
 import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom'
 import Home from './modules/Home/Components/Home/Home'
@@ -11,7 +9,7 @@ import AboutUs from './modules/AboutUs/Components/AboutUs'
 
 function App() {
 
-  const routes = create(
+  const routes = createHashRouter(
     [
       {
         errorElement: <NotFound />,
